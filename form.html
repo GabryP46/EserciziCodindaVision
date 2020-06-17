@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizi Form</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Esercizi lezione 3 - FORM -->
+    <h1>Esercizi lezione 3 - Form</h1>
+    <form action="pag-finta.php" method="POST">
+
+        <!-- Type Text-->
+        <h2>Type Text</h2>
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Nome" name="name"/>
+
+        <!-- Type Password -->
+        <h2>Type Password</h2>
+        <label for="psw">Password</label>
+        <input type="password" id="psw" placeholder="Password" name="psw"/>
+
+        <br/><br/>
+
+        <!-- Type Radio -->
+        <h2>Type Radio</h2>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Uomo</label>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Donna</label>
+        <input type="radio" id="other" name="gender" value="other"/>
+        <label for="other">Altro</label>
+
+        <br/><br/>
+
+        <!-- Select -->
+        <h2>Select</h2>
+        <select name="cars" id="cars" size="3" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <br><br>
+        
+        <!-- Textarea -->
+        <h2>Textarea</h2>
+        <textarea name="message" cols="30" rows="10">
+            The cat was playing in the garden.
+        </textarea>
+        
+        <br><br>
+
+        <!-- Button -->
+        <h2>Button</h2>
+        <button type="button" onclick="alert('MATTEOOOOO!')">Saluta</button>
+
+        <br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+
+    <br><br>
+
+    <!-- Fieldset -->
+    <h2>Fieldset</h2>
+    <form action="pag-finta2.php">
+        <fieldset>
+            <legend>Personalia: </legend>
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Nome" name="name"/><br>
+            <label for="psw">Password</label>
+            <input type="password" id="psw" placeholder="Password" name="psw"/><br><br>
+            <input type="submit" value="invia">
+        </fieldset>
+    </form>
+
+    <br><br>
+
+    <!-- Datalist -->
+    <h2>Datalist</h2>
+    <form action="pag-finta3.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <br><br>
+
+    <!-- OutPut -->
+    <h2>Output</h2>
+    <form action="pag-finta4.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 + 
+        <input type="numer" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br>
+
+    <!---- Input types ---->
+    <!-- Type Reset -->
+    <form action="pag-finta5.php">
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Nome" name="name"/>
+        <br>
+        <label for="psw">Password</label>
+        <input type="password" id="psw" placeholder="Password" name="psw"/>
+        <br>
+
+        <!-- Type CheckBox -->
+        <h3>Type Checkbox</h3>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a bike</label>
+        <input type="checkbox" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label>
+        <input type="checkbox" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label><br><br>
+
+        <!-- Type Color-->
+        <h3>Type Color</h3>
+        <label for="favcolor">Seleziona il matteo del tuo colore preferito</label>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+
+        <!-- Type Date -->
+        <h3>Type Date</h3>
+        <label for="birthday">birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        
+        <!-- DateTime-Local -->
+        <h3>Type DateTime-Local</h3>
+        <label for="birthdaytime">birthday (date and time)</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+
+        <!-- Type Email -->
+        <h3>Type Email</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="mail"><br><br>
+
+        <!-- Type File -->
+        <h3>Type File</h3>
+        <label for="file"></label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Type Month-->
+        <h3>Type Month</h3>
+        <label for="month">Mese:</label>
+        <input type="month" name="month" id="month"><br><br>
+        
+        <!-- Type Search -->
+        <h3>Type Search</h3>
+        <label for="search"></label>
+        <input type="search" name="search" id="search"><br><br>
+
+        <!-- Type Tel -->
+        <h3>Type Tel</h3>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3} - [0-9]{4} - [0-9]{3}"><br><br>
+
+        <!-- Type time -->
+        <h3>Type time</h3>
+        <label for="time">Time: </label>
+        <input type="time" name="time" id="time"><br><br>
+
+        <!-- Type URL -->
+        <h3>Type url</h3>
+        <label for="url">Url</label>
+        <input type="url" name="url" id="url"><br><br>
+
+        <!-- Type Week -->
+        <h3>Type Week</h3>
+        <label for="week"></label>
+        <input type="week" name="week" id="week"><br><br>
+
+        <h3>Type Reset</h3>
+        <input type="reset">
+
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+</body>
+</html>
