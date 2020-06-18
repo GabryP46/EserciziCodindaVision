@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(172, 185, 199);
+}
+
+h1{
+    text-align: center;
+    color: purple;
+}
+
+h2{
+    color: darkblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+form{
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px grey;
+    background-color: white;
+}
+
+button{
+    background-color: limegreen;
+}
+
+input[type=submit]{
+    background-color: chocolate;
+    color: white;
+}
+
+input[type=reset] {
+    background-color: green;
+    color: white;
+}
